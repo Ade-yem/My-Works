@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --color-white: #f3f3f3;
+    --color-purple: rgb(214, 71, 214);
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --color-white: white;
+  }
+
+#pay,
+#cancel
+#change{
+    cursor: pointer;
+    font-family: inherit;
+}
+body{
+    background: url("images/pattern-background-desktop.svg");
+    box-sizing: border-box;
+    z-index: -1;
+}
+.container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 430px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1.0rem;
+    min-height: 625px;
+    background: white;
+
+}
+a{ text-decoration-line: none;}
+@media(max-width:375px){
+    body{
+        background: url("images/pattern-background-mobile.svg");
+    }
+    .container{ max-width: 400px;}
+}
+#hero{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    border-bottom-left-radius:0 ;
+    border-bottom-right-radius: 0;
+}
+h1{color: slategray;}
+#info{
+    margin: 20px;
+    color: slategray;
+}
+#pay {
+    display: block;
+    width: 90%;
+    padding: 0.75rem;
+    background: var(--color-purple);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 1rem;
+    box-shadow: ease-out blueviolet;
+    
+  }
+#change-menu{
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 0.75rem;
+    border-radius: 10px;
+
+}
+#change-menu{
+    color: #000;
+    display: flex;
+    flex-direction: row;
+}
+#change-menu .tone {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin: 1rem;
+  }
+#change-menu .annual-plan{
+    flex-direction: column;
+    color: slategray;
+}
+#change-menu .change {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 0 auto auto;
+  }
+
+.change{
+    color: blue;
+}
+.change:hover{
+    color: purple;
+}
+.change:visited{
+    color: red;
+}
+
+#cancel{
+    color: blue;
+}
+#cancel:hover{
+    color: purple;
+}
+#cancel:visited{
+    color: red;
+}
