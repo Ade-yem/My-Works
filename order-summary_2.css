@@ -26,7 +26,7 @@ body{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     border-radius: 1.0rem;
-    min-height: 625px;
+    min-height: auto;
     background: white;
 
 }
@@ -36,6 +36,9 @@ a{ text-decoration-line: none;}
         background: url("images/pattern-background-mobile.svg");
     }
     .container{ max-width: 400px;}
+}
+@media (max-width: 1440px) {
+    .container{ max-width: 420px;}
 }
 #hero{
     display: block;
